@@ -1,9 +1,10 @@
-Funcionalidade: Testar longin valido do usuário
+ Funcionalidade: Testar longin valido do usuário
 	
+	Como Administrador
 	Para evitar acesso de usuários não cadastrado
-	Eu quero asegura o login de usuários cadastrados
+	Eu quero asegura  login apenas de usuários cadastrados
 
-	Cenário: Logar usuário valido
+	Cenário 1: Logar usuário valido
 	
 	Dado que estou na tela de login <http://quickloja.qualister.info/>
 	E informo o login "teste"
@@ -12,7 +13,7 @@ Funcionalidade: Testar longin valido do usuário
 	Então a tela inicial é apresntada
 
 	
-	Cenário: Login invalido 
+	Cenário 2: Login invalido 
    
     Dado que estou na tela de login <http://quickloja.qualister.info/>
     E informo o login "teste1"
@@ -20,7 +21,7 @@ Funcionalidade: Testar longin valido do usuário
     Quando seleciona o botão entrar
     Então a mensagem é exibida <Origem do login desconhecida>
 
-    Cenário: Login vazio 
+    Cenário 3: Login vazio 
 
     Dado que estou na tela de login <http://quickloja.qualister.info/>
     E informo e não inform o login ""
@@ -31,11 +32,11 @@ Funcionalidade: Testar longin valido do usuário
 
  Funcionalidade: cadastro de usuários
 
- 	Para cadastra novos usuários 
- 	Como quero verificar se o cadastro foi feito corretamente
- 	Eu quero incluir novos  usuários
+ 	Como Administrador quero cadastra novos usuários 
+ 	Sendo assim, desejo verificar se o cadastro dos mesmo foi feito corretamente.
+ 	
 
- 	Cenário: cadastra novo usuário como todos os campos preenchidos 
+ 	Cenário 1: cadastra novo usuário como todos os campos preenchidos 
 
  	Dado que estou na tela de usuário
  	E clico no botão novo usuário
@@ -48,7 +49,7 @@ Funcionalidade: Testar longin valido do usuário
  	Quando seleciono o botão gravar
  	Então a mensagem é exibida "Sucesso ao inserir o usuário"
 
- 	Cenário: cadastra novo usuário falatando inserir informações nos campos obrigatórios
+ 	Cenário 2: cadastra novo usuário falatando inserir informações nos campos obrigatórios
 
  	Dado que estou na tela de usuário 
  	E clico no botão novo usuário
@@ -62,7 +63,7 @@ Funcionalidade: Testar longin valido do usuário
  	Então a mensagem é exibida "Por favor,preencha os campos obrigatórios"
 
 
- 	Cenário: cancelar cadasto de novo usuário
+ 	Cenário 3: cancelar cadasto de novo usuário
    
     Dado que estou na tela de usuários 
  	E clico no botão novo usuário
@@ -76,7 +77,7 @@ Funcionalidade: Testar longin valido do usuário
  	Então o sistema volta para a de usuários
 
 
- 	Cenário: excluir usuário cadastrado
+ 	Cenário 4: excluir usuário cadastrado
     
     Dado que estou na tela de usuário
     Qundo seleciono o botão excluir do usuario "Isabela Isis"
@@ -91,7 +92,7 @@ Funcionalidade: Testar longin valido do usuário
  	Eu quero incluir novos produtos
 
 
- 	Cénario: cadastra novo produto como todos os campos preenchidos
+ 	Cénario 1: cadastra novo produto como todos os campos preenchidos
 
  	Dado que estou na tela de produtos
     E seleciono o botão novo produto
