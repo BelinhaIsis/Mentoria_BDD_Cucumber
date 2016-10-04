@@ -87,12 +87,11 @@
 
   Funcionalidade: Cadastro de produtos
 
-    Para cadastra novos produdos
- 	Como quero verificar se o cadastro foi feito corretamente
- 	Eu quero incluir novos produtos
+    Como adminstrador eu quero cadastra novos produdos
+ 	sendo assim, verificar se o cadastro dos mesmos foram feitos corretamente
+ 	
 
-
- 	Cénario 1: cadastra novo produto como todos os campos preenchidos
+    Cénario 1: cadastra novo produto como todos os campos preenchidos
 
  	Dado que estou na tela de produtos
     E seleciono o botão novo produto
