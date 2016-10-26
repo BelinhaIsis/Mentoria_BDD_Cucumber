@@ -1,7 +1,5 @@
    		
    		Feature : Registra usuário
-   			
-
    			Como administrador
    			Eu quero registra novo usário
    			Eu quero assegurar que o registro foi realizado com sucesso
@@ -18,14 +16,11 @@
    				Quando registro novo usuário
    				E não informo o campo obrigatório
    				Então é exibida a mensagem "O campo nome do campo não pode estar vazio"	
-
-
-   		Feature : Logar usuário cadastrado
-   			
-
-   			Como administrador
-   			Eu quero logar usuário
-   			Eu quero visulizar o usuário logado 
+		
+		Feature : Logar usuário cadastrado
+   				Como administrador
+   				Eu quero logar usuário
+   				Eu quero visulizar o usuário logado 
 
    			Scenario : login do usuário
 
